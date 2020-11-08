@@ -25,5 +25,7 @@ public class RestClient {
         JsonObject jsonObject = new JsonParser().parse(PicReader).getAsJsonObject();
         System.out.println(jsonObject.get("file").getAsString());
 
+        //Google API with API Key(deleted API Key)
+        URL GoogleURL = new URL("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=52.2297700,21.0117800&radius=1000&types=food&key=API_KEY");
     }
 }
